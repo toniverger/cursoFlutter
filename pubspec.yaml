@@ -61,6 +61,11 @@ flutter:
   assets:
     - images/408d6a483fca55183ef414265a2d0063.jpeg
     - images/istockphoto-1150477623-170667a.jpeg
+    - images/7OPRbL0c_400x400.jpeg
+    - images/hamaca.jpeg
+    - images/palmera.jpeg
+    - images/sol.jpeg
+    - images/chanchos.jpeg
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
