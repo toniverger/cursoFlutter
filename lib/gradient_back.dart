@@ -24,7 +24,7 @@ class GradientBack extends StatelessWidget {
           fontWeight: FontWeight.bold,
         )
       ),
-      alignment: const Alignment(-0.85, -0.5),
+      alignment: const Alignment(-0.85, -0.6),
     );
   }
 }
