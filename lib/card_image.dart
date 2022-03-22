@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hackernews/floating_action_button_green.dart';
 
 class CardImage extends StatelessWidget {
   const CardImage({Key? key, required this.pathName}) : super(key: key);
@@ -9,10 +10,10 @@ class CardImage extends StatelessWidget {
   Widget build(BuildContext context) {
     final card = Container(
       height: 300.0,
-      width: 250.0,
+      width: 230.0,
       margin: const EdgeInsets.only(
-        top: 10.0,
-        left: 20.0,
+        top: 100.0,
+        left: 10.0,
       ),
       decoration: BoxDecoration(
           image:
@@ -26,6 +27,12 @@ class CardImage extends StatelessWidget {
                 offset: Offset(0.0, 7.0))
           ]),
     );
-    return card;
+    return Stack(
+      alignment: Alignment(0.9, 1.1),
+      children: [
+        card,
+        FloatingActionButtonGreen()
+      ],
+    );
   }
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hackernews/Button_purple.dart';
 
 class DescriptionPlace extends StatelessWidget {
 
@@ -16,7 +17,7 @@ class DescriptionPlace extends StatelessWidget {
   Widget build(BuildContext context) {
     //TODO: implement build
 
-    final star_half = Container(
+    final starHalf = Container(
       margin: const EdgeInsets.only(
         top: 323.0,
         right: 3.0,
@@ -24,7 +25,7 @@ class DescriptionPlace extends StatelessWidget {
       child: const Icon(Icons.star_half, color: Color(0xFFf2c611)),
     );
 
-    final star_border = Container(
+    final starBorder = Container(
       margin: const EdgeInsets.only(
         top: 323.0,
         right: 3.0
@@ -56,13 +57,13 @@ class DescriptionPlace extends StatelessWidget {
       ),
     );
 
-    final title_stars = Row(
+    final titleStars = Row(
       children: [
         Container(
           margin: const EdgeInsets.only(top: 320.0, left: 20.0, right: 20.0),
           child: Text(
             namePlace,
-            style: const TextStyle(fontFamily: "Lato", fontSize: 30.0, fontWeight: FontWeight.w900),
+            style: const TextStyle(fontFamily: "Lato", fontSize: 30.0, fontWeight: FontWeight.bold),
             textAlign: TextAlign.left,
           ),
         ),
@@ -71,13 +72,13 @@ class DescriptionPlace extends StatelessWidget {
             star,
             star,
             star,
-            star_half,
-            star_border,
+            starHalf,
+            starBorder,
           ],
         ),
       ],
     );
 
-    return Column(children: [title_stars, description]);
+    return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [titleStars, description, const ButtonPurple(buttonText: "Navigate")]);
   }
 }
